@@ -30,6 +30,11 @@ spec "user.project"
 spec "user.toggleterm"
 spec "user.bufdelete"
 spec "user.wikivim"
+spec "user.vim-tmux-navigator"
+spec "user.vim-gist"
+spec "user.copilot"
+spec "user.fugitive"
+spec "user.jekyll"
 require "user.lazy"
 
 vim.cmd("command! ChatGPT lua require'chatgpt'.chatgpt()")

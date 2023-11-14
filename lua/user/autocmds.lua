@@ -59,3 +59,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.opt_local.spell = true
   end,
 })
+
+-- ktr: for wiki and journal with wiki.vim
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter"}, {
+  pattern = {"*/diary/*", "*/vimwiki/*", "*/journal/*", "/tmp/mutt*"},
+  callback = function()
+    vim.opt_local.textwidth=72
+  end
+})
+
