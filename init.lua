@@ -31,3 +31,6 @@ spec "user.toggleterm"
 spec "user.bufdelete"
 spec "user.wikivim"
 require "user.lazy"
+
+vim.cmd("command! ChatGPT lua require'chatgpt'.chatgpt()")
+
