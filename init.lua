@@ -36,6 +36,7 @@ spec "user.copilot"
 spec "user.fugitive"
 spec "user.jekyll"
 spec "user.neoai"
+spec "user.listsvim"
 require "user.lazy"
 
 vim.cmd("command! ChatGPT lua require'chatgpt'.chatgpt()")
