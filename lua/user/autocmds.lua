@@ -68,3 +68,14 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter"}, {
   end
 })
 
+-- ktr- this works!!  Start where we left off
+vim.api.nvim_create_autocmd( { "BufReadPost" }, {
+  callback = function()
+    if vim.fn.line("'\"") > 0 and vim.fn.line("'\"") <= vim.fn.line("$") then
+        vim.api.nvim_exec("normal! g`\"", false)
+    end
+  end,
+})
+
+
+
