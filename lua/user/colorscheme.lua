@@ -1,5 +1,8 @@
 -- there is also kanagawa, woodwose suggests
 -- https://github.com/rebelot/kanagawa.nvim
+-- also: 
+--   rabbitear: def take a look at heirline
+
 
 local M = {
   "morhetz/gruvbox",
