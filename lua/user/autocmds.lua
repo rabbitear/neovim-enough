@@ -68,3 +68,19 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter"}, {
   end
 })
 
+-- ktr-
+-- This was suppose to work like it does on my vimrc, but it doesn't
+-- run, I tired it with vim.fn.line( ... ) before ... chatgpt, I'm using
+-- will think about this one... have to look up how to do, fn, functions
+-- and also commands
+--
+-- vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+--   pattern = "*",
+--   callback = function()
+--     local last_line = vim.api.nvim_command("line("'\"")")
+--     if last_line > 1 and last_line <= vim.api.nvim_command("line("$")") then
+--       vim.api.nvim_command("normal! g`\"")
+--     end
+--   end
+-- })
+
